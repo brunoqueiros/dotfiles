@@ -49,3 +49,7 @@ add_key() {
 extract_tar() {
   sudo tar -zxvf $1 -C $2 > /dev/null 2>&1
 }
+
+download_source() {
+  wget -O $2 $1 > /dev/null 2>&1
+}
