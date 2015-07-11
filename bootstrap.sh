@@ -29,3 +29,7 @@ check_dependencies() {
 is_linux() {
   [ "$(uname -s)" != "Linux" ] && fail "Only for Linux :("
 }
+
+add_repo() {
+  sudo add-apt-repository -y $1 > /dev/null 2>&1
+}
