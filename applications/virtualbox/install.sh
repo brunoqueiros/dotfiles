@@ -11,7 +11,7 @@ info "Installing $NAME"
 if test ! "$(which virtualbox)"; then
   download_source "$URL" "$FILE"
   install_dpkg "$FILE"
-  rm $FILE
+  rm "$FILE"
 fi
 
 success "$NAME installed"
