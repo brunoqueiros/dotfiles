@@ -53,3 +53,7 @@ extract_tar() {
 download_source() {
   wget -O $2 $1 > /dev/null 2>&1
 }
+
+extract_bz2() {
+  sudo tar -jxvf $1 -C $2 > /dev/null 2>&1
+}
