@@ -45,3 +45,7 @@ install() {
 add_key() {
   wget -q -O - $1 | sudo apt-key add - > /dev/null 2>&1
 }
+
+extract_tar() {
+  sudo tar -zxvf $1 -C $2 > /dev/null 2>&1
+}
