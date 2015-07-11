@@ -37,3 +37,7 @@ add_repo() {
 update() {
   sudo apt-get update > /dev/null 2>&1
 }
+
+install() {
+  sudo apt-get install -y $1 > /dev/null 2>&1
+}
