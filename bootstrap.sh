@@ -33,3 +33,7 @@ is_linux() {
 add_repo() {
   sudo add-apt-repository -y $1 > /dev/null 2>&1
 }
+
+update() {
+  sudo apt-get update > /dev/null 2>&1
+}
