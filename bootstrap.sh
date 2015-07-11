@@ -57,3 +57,8 @@ download_source() {
 extract_bz2() {
   sudo tar -jxvf $1 -C $2 > /dev/null 2>&1
 }
+
+install_dpkg() {
+  sudo dpkg -i $1 > /dev/null 2>&1
+  sudo apt-get install -f > /dev/null 2>&1
+}
