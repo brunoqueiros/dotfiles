@@ -14,7 +14,7 @@ if test ! "$(which firefox-developer)"; then
   sudo rm -Rf /usr/share/applications/firefox-developer.desktop
 
   download_source "$URL" "$FILE"
-  extract_bz2 "$FILE" "~/"
+  extract_bz2 "$FILE" "."
   sudo mv firefox /opt/firefox-developer
   sudo ln -sf /opt/firefox-developer/firefox-bin /usr/bin/firefox-developer
   sudo sh -c 'echo "[Desktop Entry]
