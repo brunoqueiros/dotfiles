@@ -9,7 +9,7 @@ FILE="eclipse.tar.gz"
 info "Installing $NAME"
 
 download_source "$URL" "$FILE"
-extract_tar "$FILE" "/opt/teste/"
+extract_tar "$FILE" "/opt/"
 sudo sh -c 'echo "[Desktop Entry]
 Name=Eclipse 4
 Type=Application
