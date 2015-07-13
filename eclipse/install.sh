@@ -4,7 +4,7 @@ source ./bootstrap.sh
 
 NAME="Eclipse Mars EE"
 URL="http://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/luna/SR2/eclipse-java-luna-SR2-linux-gtk-x86_64.tar.gz"
-FILE="eclipse.tar.gz"
+FILE=".tmp/eclipse.tar.gz"
 
 info "Installing $NAME"
 
