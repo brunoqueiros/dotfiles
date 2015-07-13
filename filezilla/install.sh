@@ -4,7 +4,7 @@ source ./bootstrap.sh
 
 NAME="Filezilla"
 URL="http://sourceforge.net/projects/filezilla/files/FileZilla_Client/3.10.3/FileZilla_3.10.3_x86_64-linux-gnu.tar.bz2"
-FILE="filezilla.tar.bz2"
+FILE=".tmp/filezilla.tar.bz2"
 
 info "Installing $NAME"
 
