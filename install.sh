@@ -25,6 +25,11 @@ main() {
 
   # Set unity defaults
   sh -c unity/set-defaults.sh
+
+  echo ''
+  echo 'All done, now your system will restart :)'
+  sleep 5
+  sudo reboot
 }
 
 main
