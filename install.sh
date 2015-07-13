@@ -22,6 +22,9 @@ main() {
   find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
 
   remove_tmp_folder
+
+  # Set unity defaults
+  sh -c unity/set-defaults.sh
 }
 
 main
