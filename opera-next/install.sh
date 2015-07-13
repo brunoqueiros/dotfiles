@@ -4,7 +4,7 @@ source ./bootstrap.sh
 
 NAME="Opera Next"
 URL="http://get.geo.opera.com.global.prod.fastly.net/pub/opera-beta/31.0.1889.50/linux/opera-beta_31.0.1889.50_amd64.deb"
-FILE="opera-next.deb"
+FILE=".tmp/opera-next.deb"
 
 info "Installing $NAME"
 
