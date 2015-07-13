@@ -1,7 +1,10 @@
 #!/bin/bash
 
+# Turn off "Remote Search" so that search terms in Dash do not get sent over the internet
+gsettings set com.canonical.Unity.Lenses remote-content-search "none"
+
 # Set launcher favorites
-gsettings set com.canonical.Unity.Launcher favorites \"[
+gsettings set com.canonical.Unity.Launcher favorites "[
   'nautilus-home.desktop',
   'firefox.desktop',
   'firefox-developer.desktop',
@@ -11,7 +14,7 @@ gsettings set com.canonical.Unity.Launcher favorites \"[
   'opera-beta.desktop',
   'eclipse.desktop',
   'sublime-text.desktop'
-]
+]"
 
 # Hide bluetooth icon from the menu bar
 gsettings set com.canonical.indicator.bluetooth visible false
