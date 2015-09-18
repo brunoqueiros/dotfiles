@@ -3,7 +3,7 @@
 source ./bootstrap.sh
 
 NAME="Firefox Developer"
-URL="https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-aurora/firefox-41.0a2.en-US.linux-x86_64.tar.bz2"
+URL="https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-aurora-l10n/firefox-42.0a2.pt-BR.linux-x86_64.tar.bz2"
 FILE=".tmp/firefox-developer.tar.bz2"
 
 info "Installing $NAME"
