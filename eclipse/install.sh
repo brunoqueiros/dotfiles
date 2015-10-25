@@ -2,8 +2,8 @@
 
 source ./bootstrap.sh
 
-NAME="Eclipse Mars EE"
-URL="http://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/luna/SR2/eclipse-java-luna-SR2-linux-gtk-x86_64.tar.gz"
+NAME="Eclipse Mars 1"
+URL="http://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/mars/1/eclipse-jee-mars-1-linux-gtk-x86_64.tar.gz"
 FILE=".tmp/eclipse.tar.gz"
 
 info "Installing $NAME"
@@ -11,7 +11,7 @@ info "Installing $NAME"
 download_source "$URL" "$FILE"
 extract_tar "$FILE" "/opt/"
 sudo sh -c 'echo "[Desktop Entry]
-Name=Eclipse 4
+Name=Eclipse
 Type=Application
 Exec=/opt/eclipse/eclipse
 Terminal=false
