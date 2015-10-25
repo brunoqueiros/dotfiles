@@ -13,7 +13,8 @@ gsettings set com.canonical.Unity.Launcher favorites "[
   'opera.desktop',
   'opera-beta.desktop',
   'eclipse.desktop',
-  'sublime-text.desktop'
+  'sublime-text.desktop',
+  'atom.desktop'
 ]"
 
 # Hide bluetooth icon from the menu bar
@@ -21,4 +22,3 @@ gsettings set com.canonical.indicator.bluetooth visible false
 
 # Hide battery icon from the menu bar when the battery is not in use
 gsettings set com.canonical.indicator.power icon-policy "charge" && gsettings set com.canonical.indicator.power show-time false
-
