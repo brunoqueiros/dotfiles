@@ -19,7 +19,7 @@ fail() {
 }
 
 check_dependencies() {
-  for pkg in zsh git curl python; do
+  for pkg in zsh git curl python build-essential; do
     if test ! "$(which $pkg)"; then
       install $pkg
     fi
