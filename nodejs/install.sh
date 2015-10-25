@@ -2,7 +2,7 @@
 
 source ./bootstrap.sh
 
-NAME="Nodejs"
+NAME="Node.js"
 
 info "Installing $NAME"
 
