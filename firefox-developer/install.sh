@@ -8,7 +8,7 @@ FILE=".tmp/firefox-developer.tar.bz2"
 
 info "Installing $NAME"
 
-if test ! "$(which firefox-developer)"; then
+if test ! "[ -f /usr/share/applications/firefox-developer.desktop ]"; then
   sudo rm -Rf /opt/firefox-developer*
   sudo rm -Rf /usr/bin/firefox-developer
   sudo rm -Rf /usr/share/applications/firefox-developer.desktop
