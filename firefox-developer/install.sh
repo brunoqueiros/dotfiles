@@ -3,12 +3,12 @@
 source ./bootstrap.sh
 
 NAME="Firefox Developer"
-URL="https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-aurora-l10n/firefox-42.0a2.pt-BR.linux-x86_64.tar.bz2"
+URL="https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-aurora-l10n/firefox-43.0a2.pt-BR.linux-x86_64.tar.bz2"
 FILE=".tmp/firefox-developer.tar.bz2"
 
 info "Installing $NAME"
 
-if test ! "[ -f /usr/share/applications/firefox-developer.desktop ]"; then
+if [ ! -f /usr/share/applications/firefox-developer.desktop ]; then
   sudo rm -Rf /opt/firefox-developer*
   sudo rm -Rf /usr/bin/firefox-developer
   sudo rm -Rf /usr/share/applications/firefox-developer.desktop
@@ -26,7 +26,7 @@ if test ! "[ -f /usr/share/applications/firefox-developer.desktop ]"; then
   Type=Application
   Categories=Application;Network;X-Developer;
   Comment=Firefox Developer Edition Web Browser." >> "/usr/share/applications/firefox-developer.desktop"'
-  rm "~/$FILE"
+  rm "$FILE"
 fi
 
 success "$NAME installed"
