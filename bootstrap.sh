@@ -38,6 +38,10 @@ update() {
   sudo apt-get update > /dev/null 2>&1
 }
 
+upgrade() {
+  sudo apt-get upgrade -y > /dev/null 2>&1
+}
+
 install() {
   sudo apt-get install -y $1 > /dev/null 2>&1
 }
