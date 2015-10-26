@@ -13,9 +13,20 @@ remove_tmp_folder() {
 }
 
 main() {
+  # Don't show interactive screen
+  export DEBIAN_FRONTEND=noninteractive
+
+  # Enable Canonical partner repository
+  sudo sed -i "/^# deb .*partner/ s/^# //" /etc/apt/sources.list
+
+  info "Updating the system"
+  update
+  upgrade
+  success "System updated"
+
   create_tmp_folder
 
-  info "Installing dependencies"
+  info "Installing the dependencies"
   check_dependencies
   success "Dependencies installed"
 
@@ -28,8 +39,8 @@ main() {
 
   echo ''
   echo 'All done, now your system will restart :)'
-  sleep 5
-  sudo reboot
+  # sleep 5
+  # sudo reboot
 }
 
 main
