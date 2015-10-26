@@ -8,7 +8,7 @@ FILE=".tmp/eclipse.tar.gz"
 
 info "Installing $NAME"
 
-if test ! "[ -f /usr/share/applications/eclipse.desktop ]"; then
+if [ ! -f /usr/share/applications/eclipse.desktop ]; then
   download_source "$URL" "$FILE"
   extract_tar "$FILE" "/opt/"
   sudo sh -c 'echo "[Desktop Entry]
