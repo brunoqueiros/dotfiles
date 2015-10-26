@@ -6,7 +6,9 @@ NAME="oh-my-zsh"
 
 info "Installing $NAME"
 
-install "zsh"
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+if test ! "$(which zsh)"; then
+  install "zsh"
+  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+fi
 
 success "$NAME installed"
