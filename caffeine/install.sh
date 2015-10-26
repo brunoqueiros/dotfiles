@@ -6,10 +6,10 @@ NAME="Caffeine"
 
 info "Installing $NAME"
 
-if test ! "$(which caffeine)"; then
-  add_repo "ppa:caffeine-developers/ppa"
+if test ! "$(which caffeine-plus)"; then
+  add_repo "ppa:nilarimogard/webupd8"
   update
-  install "caffeine"
+  install "caffeine-plus"
 fi
 
 success "$NAME installed"
